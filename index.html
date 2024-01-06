@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bisnis Kerupuk</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(error => {
+            console.log('Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home">
+    <div class="hero">
+      <h1>Selamat Datang di Bisnis Kerupuk</h1></div>
+      <div class="hero1"><p>Temukan berbagai macam kerupuk berkualitas tinggi dari kami.</p>
+    </div>
+  </section>
+  <section id="produk">
+    <h2>Produk Kami</h2>
+    <div class="produk">
+      <img src="krpk.jpg" alt="Kerupuk 1">
+      <h3>Kerupuk Rasa Original</h3>
+      <p>Kerupuk dengan rasa asli yang lezat.</p>
+    </div>
+    <div class="produk">
+      <img src="krpk2.jpeg" alt="Kerupuk 2">
+      <h3>Kerupuk Rasa Pedas</h3>
+      <p>Kerupuk dengan rasa pedas yang menggugah selera.</p>
+    </div>
+    <div class="produk">
+      <img src="krpk3.jpeg" alt="Kerupuk 2">
+      <h3>Kerupuk Rasa Pedas</h3>
+      <p>Kerupuk dengan rasa udang yang gurih.</p>
+    </div>
+    <div class="produk">
+      <img src="krpk4.jpeg" alt="Kerupuk 2">
+      <h3>Kerupuk Rasa Pedas</h3>
+      <p>Kerupuk dengan rasa pedas yang menggugah selera.</p>
+    </div>
+  </section>
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Kami adalah produsen kerupuk terkemuka yang menyediakan berbagai macam varian kerupuk berkualitas tinggi.</p>
+  </section>
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <div class="contact-card">
+      <div class="contact-info">
+        <h3>Hubungi Kami</h3>
+        <p>Alamat:<a href="https://maps.app.goo.gl/8KMtJ6i4GXF4rsFX9">Jl. Rahayu No.04, RT05/RW02. Pecangaan Kulon, Kec. Pecangaan</a></p>
+        <p>Telepon: +62 852-9086-9976</p>
+        <p>Email: info@kerupuk.com</p>
+      </div>
+      <div class="contact-action">
+        <h3>Hubungi Kami via WhatsApp</h3>
+        <a href="https://wa.me/6285290869976" class="whatsapp-btn">
+          <img src="ppp.png" alt="WhatsApp Icon">
+          Hubungi Kami
+        </a>
+      </div>
+    </div>
+  </section>
+  <center>
+    <p>&copy; est 1980 Kerupuk Berkah Jaya</p>
+  </center>
+  <script src="script.js"></script>
+</body>
+</html>
